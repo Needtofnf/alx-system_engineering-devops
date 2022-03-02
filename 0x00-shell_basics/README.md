@@ -1,1 +1,1 @@
-#!/bin/bash holla
+#!/bin/bash pwd
