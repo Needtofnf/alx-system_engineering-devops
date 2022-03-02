@@ -1,2 +1,5 @@
-#!/bin/bash
+ #!/bin/bash
 -rwxr--r-- 1 root root 16 Mar  2 13:16 0-current_working_directory
+-rwxr--r-- 1 root root 51 Mar  2 13:32 1-listit
+-rwxr--r-- 1 root root 15 Mar  2 13:45 2-bring_me_home
+-rwxr--r-- 1 root root 79 Mar  2 14:29 3-listfiles
