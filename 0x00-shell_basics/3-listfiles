@@ -1,2 +1,2 @@
 #!/bin/bash
- -rwxr-xr-x 1 996 992 16 0-current_working_directory
+ls -l
