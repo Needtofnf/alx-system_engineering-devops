@@ -1,2 +1,2 @@
 #!/bin/bash
-ZZ 
+paste - - | cut -d$'\t' -f1 
