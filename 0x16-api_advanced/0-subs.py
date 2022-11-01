@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-"""queries the Reddit API"""
+"""Function that queries the reddit API"""
 import requests
 
 
 def number_of_subscribers(subreddit):
-    """returns total subs"""
-    header = {"User-Agent": "Holberton"}
-    url = "https://www.reddit.com/r/" + subreddit + "/about.json"
-    r = requests.get(url, headers=header)
-    if r.status_code == 200:
-        return r.json().get("data", None).get("subscribers", None)
+    """Returns the number of subscribers"""
+    url = 'https://www.reddit.com/r/' + subreddit + "/about.json"
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows)'}
+    res_status = requests.get(url, headers=headers, allow_redirects=False)
+
+    if res_status.status_code == 200:
+        return res_status.json()['data']['subscribers']
     else:
         return 0
-
-if __name__ == "__main__":
-    pass
